@@ -30,10 +30,18 @@ namespace sdlfisd
             giftBoxList.Add(addressB); //1
             giftBoxList.Add(addressC); //2
 
-            Console.WriteLine(giftBoxList[2].Letter);
             Console.WriteLine("giftbox List Count :" + giftBoxList.Count);
 
+            for (int i = 0; i < giftBoxes.Length; i++)
+            {
+                giftBoxes[i].Letter = (i + 1) + "번째 편지";
+                Console.WriteLine(giftBoxList[i].Letter);
+            }
+
+
         }
+
+
 
         private static string add(int v1, int v2)
         {
