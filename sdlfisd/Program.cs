@@ -38,6 +38,10 @@ namespace sdlfisd
                 Console.WriteLine(giftBoxList[i].Letter);
             }
 
+            foreach (GiftBox gift in giftBoxes)
+            { 
+                Console.WriteLine(gift.Letter);
+            }
 
         }
 
